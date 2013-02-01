@@ -32,10 +32,17 @@ if(isset($additional_header_info))
 </head>
 
 <body>
-	<div class="navbar navbar-fixed-top">
+
+
+
+<img src="http://3.bp.blogspot.com/-0x8-0pghHhI/TchV_Ey0vrI/AAAAAAAAAO8/RWuxvg4Xzgc/s1600/Ragnarok-Logo-generic.png">
+	
+
+
+
+	<div class="navbar">
 		<div class="navbar-inner">
 			<div class="container">
-
 				<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
 				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 					<span class="icon-bar"></span>

@@ -2,8 +2,18 @@
 
 <div class="row">
 	<div class="span12">
+
+
+
+		<p>สินค้าใหม่</p>
+		<br>
+
+
+		
 		<div id="myCarousel" class="carousel slide">
 			<!-- Carousel items -->
+
+
 			<div class="carousel-inner">
 				<?php
 				$active_banner	= 'active ';
