@@ -12,14 +12,8 @@
 <meta name="Description" content="Go Cart is an open source shopping cart built on the Code Igniter framework">
 <?php endif;?>
 
-<?php echo theme_css('bootstrap.min.css', true);?>
-<?php echo theme_css('bootstrap-responsive.min.css', true);?>
-<?php echo theme_css('styles.css', true);?>
-
-<?php echo theme_js('jquery.js', true);?>
-<?php echo theme_js('bootstrap.min.js', true);?>
-<?php echo theme_js('squard.js', true);?>
-<?php echo theme_js('equal_heights.js', true);?>
+<?php echo get_style(); ?>
+<?php echo get_js(); ?>
 
 <?php
 //with this I can put header data in the header instead of in the body.

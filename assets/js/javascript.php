@@ -17,13 +17,13 @@ if ( ! isset($_GET['app']) || ( isset($_GET['main']) && $_GET['main'] == TRUE ))
 {
 	// Static Import
 	echo file_get_contents('jquery.1.9.0.js')."\r\n";
-	echo file_get_contents('jquery.migrate.1.0.0.js')."\r\n"
+	echo file_get_contents('jquery.migrate.1.0.0.js')."\r\n";
 	echo file_get_contents('jquery-ui.1.9.2.js');
 	echo file_get_contents('jquery.bootstrap.js');
 	echo file_get_contents('jquery.custom.js');
 	echo file_get_contents('redactor.min.js');
 	echo file_get_contents('squard.js');
-	echo file_get_contents('equal_height.js');
+	echo file_get_contents('equal_heights.js');
 	echo file_get_contents('file-browser.js');
 	
 }

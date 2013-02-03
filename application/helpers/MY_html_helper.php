@@ -29,15 +29,15 @@ if ( ! function_exists('get_style'))
 	{
 		if ( $app && $page )
 		{
-			return '<link href="'. base_url() .'static/css/style.php?app='. $app .'&amp;page='. $page .'" rel="stylesheet">';	
+			return '<link href="'. base_url() .'assets/css/style.php?app='. $app .'&amp;page='. $page .'" rel="stylesheet">';	
 		}
 		elseif ( $app )
 		{
-			return '<link href="'. base_url() .'static/css/style.php?app='. $app .'" rel="stylesheet">';	
+			return '<link href="'. base_url() .'assets/css/style.php?app='. $app .'" rel="stylesheet">';	
 		}
 		else
 		{
-			return '<link href="'. base_url() .'static/css/style.php" rel="stylesheet">';	
+			return '<link href="'. base_url() .'assets/css/style.php" rel="stylesheet">';	
 		}
 	}
 }
@@ -57,20 +57,32 @@ if ( ! function_exists('get_js'))
 	{
 		if ( $app && $page )
 		{
-			return '<script src="'. base_url() .'static/js/javascript.php?app='. $app .'&page='. $page .'"></script>';	
+			return '<script src="'. base_url() .'assets/js/javascript.php?app='. $app .'&page='. $page .'"></script>';	
 		}
 		elseif ( $app )
 		{
-			return '<script src="'. base_url() .'static/js/javascript.php?app='. $app .'"></script>';	
+			return '<script src="'. base_url() .'assets/js/javascript.php?app='. $app .'"></script>';	
 		}
 		else
 		{
-			return '<script src="'. base_url() .'static/js/javascript.php"></script>';	
+			return '<script src="'. base_url() .'assets/js/javascript.php"></script>';	
 		}
 	}
 }
 
-function load_script($path)
-{
-	return '<script type="text/javascript" src="/'.$path.'"></script>';
+// --------------------------------------------------------------------
+
+/**
+ * load_script
+ *
+ * @access	public
+ * @param	string
+ * @return	str
+ */
+if ( ! function_exists('load_script'))
+{	
+	function load_script($path)
+	{
+		return '<script type="text/javascript" src="/'.$path.'"></script>';
+	}
 }
