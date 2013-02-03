@@ -48,9 +48,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'ecom';
-$db['default']['password'] = 'zxcvbn';
-$db['default']['database'] = 'cart';
+$db['default']['username'] = 'ecommerce';
+$db['default']['password'] = 'ecommerce';
+$db['default']['database'] = 'ecommerce';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = 'ec_';
 $db['default']['pconnect'] = TRUE;
