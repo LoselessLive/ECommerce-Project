@@ -12,7 +12,6 @@ class Cart extends Front_Controller {
 
 	function index()
 	{
-		echo 'flsdapfkdsjglsdjgasj;flsjgdsal;kgjlksdjglsg';
 		$this->load->model(array('Banner_model', 'box_model'));
 		$this->load->helper('directory');
 
@@ -26,7 +25,7 @@ class Cart extends Front_Controller {
 
 	function page($id = false)
 	{
-		//if there is no page id provided redirect to the homepage
+		//if there is no page id provided redirect to the homepage.
 		$data['page']	= $this->Page_model->get_page($id);
 		if(!$data['page'])
 		{

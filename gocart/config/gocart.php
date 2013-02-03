@@ -6,19 +6,19 @@ $config['theme']			= 'default';
 $config['ssl_support']		= false;
 
 // Business information
-$config['company_name']		= 'XKUNG';
+$config['company_name']		= 'ecommerce';
 $config['address1']			= '';
 $config['address2']			= '';
 $config['country']			= ''; // use proper country codes only
 $config['city']				= ''; 
 $config['state']			= '';
 $config['zip']				= '';
-$config['email']			= 'xkung@xkung.xkung';
+$config['email']			= 'ecommerce@ecommerce.com';
 
 // Store currency
 $config['currency']						= 'USD';  // USD, EUR, etc
-$config['currency_symbol']				= ' Baht';
-$config['currency_symbol_side']			= 'right'; // anything that is not "left" is automatically right
+$config['currency_symbol']				= '$';
+$config['currency_symbol_side']			= 'left'; // anything that is not "left" is automatically right
 $config['currency_decimal']				= '.';
 $config['currency_thousands_separator']	= ',';
 
