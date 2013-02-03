@@ -17,6 +17,7 @@ $new_window		= array('name'=>'new_window', 'value'=>1, 'checked'=>set_checkbox('
 	<label for="link"><?php echo lang('link');?> </label>
 	<?php echo form_input($link); ?>
 
+	
 	<label for="enable_on"><?php echo lang('enable_on');?> </label>
 	<?php echo form_input($enable_on); ?>
 

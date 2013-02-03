@@ -11,7 +11,8 @@
 					<div class="<?php echo $active_banner;?>item">
 						<?php
 						
-						$banner_image	= '<img src="'.base_url('uploads/'.$banner->image).'" />';
+						$banner_image	= '<img style="width:500px;height:500px;margin-left:50px;"src="'.base_url('uploads/'.$banner->image).'" />';
+						$banner_image .= '<div class="carousel-caption"> <h4>'.$banner->description.'</h4></div>';
 						if($banner->link)
 						{
 							$target=false;
