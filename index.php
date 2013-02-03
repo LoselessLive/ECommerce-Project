@@ -1,14 +1,5 @@
 <?php
 
-//if the gocart config file doesn't exist, the cart hasn't been installed.
-if(!file_exists(dirname($_SERVER['SCRIPT_FILENAME']).'/gocart/config/gocart.php'))
-{
-	$folder = dirname($_SERVER['SCRIPT_NAME']);
-	$path	= rtrim($_SERVER['HTTP_HOST'].$folder, '/\\').'/';	
-	header('Location: http://'.$path.'install');
-	die;
-}
-
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
@@ -81,7 +72,7 @@ if (defined('ENVIRONMENT'))
  * NO TRAILING SLASH!
  *
  */
-	$application_folder = 'gocart';
+	$application_folder = 'application';
 
 /*
  * --------------------------------------------------------------------
@@ -183,6 +174,8 @@ if (defined('ENVIRONMENT'))
 
 	// Name of the "system folder"
 	define('SYSDIR', trim(strrchr(trim(BASEPATH, '/'), '/'), '/'));
+	
+	define('PATH', '/myservice');
 
 
 	// The path to the "application" folder

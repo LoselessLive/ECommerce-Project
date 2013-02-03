@@ -1,0 +1,147 @@
+body {
+	margin-top:60px;
+	background-image: url('../img/debut_dark.png');
+	font-family: 'thaisans_neueregular';
+	padding: 0px;
+	margin: 0px;
+}
+
+@media (max-width: 979px) {
+	body {
+		margin-top:0px;
+	}
+}
+
+
+img.responsiveImage
+{
+	width: 100%;
+}
+
+.price-slash {
+	text-decoration:line-through;
+	font-size:.9em;
+	color:#999;
+}
+
+.price-sale {
+	font-weight:bold;
+	color:#ff753f;
+}
+
+.price-reg {
+	font-weight:bold;
+	color:#38586f;
+}
+
+.product-price {
+	color:#ffa800;
+}
+
+/* Footer
+-------------------------------------------------- */
+.footer {
+	margin-top: 45px;
+	padding: 35px 0 36px;
+	border-top: 1px solid #e5e5e5;
+}
+.footer p {
+	margin-bottom: 0;
+	color: #555;
+}
+
+/* Hide Related products from the responsive design */
+ @media (max-width: 767px) {
+	.desktop {
+		display:none;
+	}
+}
+
+@media (min-width: 767px) {
+	.mobile {
+		display:none;
+	}
+
+}
+
+.sku-pricing div{
+	color:#999;
+	text-transform:uppercase;
+	font-size:14px;
+}
+
+.out-of-stock div{
+	background-color:#eee;
+	font-family: 'Oswald', sans-serif;
+	color:#858585;
+	text-transform:uppercase;
+	text-align:center;
+	padding:12px 15px;
+	font-size:22px;
+	margin:0px 0px 0px 45px;
+}
+
+.product-cart-form
+{
+	background-color:#eee;
+	border:1px solid #ddd;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding:20px 0px 10px;
+}
+
+/* My Account */
+.address-box {
+	border:1px solid #eee;
+	background-color:#f2f2f2;
+	padding:5px 20px;
+	margin:5px 0px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.my-account-box {
+	border:1px solid #eee;
+	background-color:#f2f2f2;
+	padding:5px 20px;
+	margin:10px -20px 5px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.hide {
+	display:none;
+}
+
+.alert {
+	font-size: 18px;
+}
+
+.form-submit{
+	text-align:center;
+	margin-top:10px;
+}
+
+.form-submit button{
+	font-size:18px;
+	padding:6px 16px;
+}
+
+#wrapper{
+	margin: 0 auto;
+	min-width: 1024px;
+}
+
+/* Datetime picker */
+.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+.ui-timepicker-div dl { text-align: left; }
+.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+
+.ui-timepicker-rtl{ direction: rtl; }
+.ui-timepicker-rtl dl { text-align: right; }
+.ui-timepicker-rtl dl dd { margin: 0 65px 10px 10px; }
