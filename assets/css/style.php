@@ -26,6 +26,7 @@ if ( ! isset($_GET['app']) || ( isset($_GET['main']) && $_GET['main'] == TRUE ) 
 	echo file_get_contents("redactor.css");
 	echo file_get_contents("font-awesome.css");
 	echo file_get_contents("font-awesome-ie7.min.css");
+	echo file_get_contents("coin-slider-styles.css");
 	
 }
 

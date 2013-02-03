@@ -1,74 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
 <?php include('header.php'); ?>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/coin-slider.js"></script>
+
+	<link rel="stylesheet" href="assets/css/coin-slider-styles.css" type="text/css" />
+
+
+	<title>Coin Slider: jQuery Image Slider Plugin with Unique Effects</title>
+</head>
+<body> 
+
 
 <div class="row">
-	<div class="span12">
-		<div id="myCarousel" class="carousel slide">
-			<!-- Carousel items -->
-			<div class="carousel-inner">
-				<?php
-				$active_banner	= 'active ';
-				foreach($banners as $banner):?>
-					<div class="<?php echo $active_banner;?>item">
-						<?php
-						
-						$banner_image	= '<img style="width:500px;height:500px;margin-left:50px;"src="'.base_url('uploads/'.$banner->image).'" />';
-						$banner_image .= '<div class="carousel-caption"> <h4>'.$banner->description.'</h4></div>';
-						if($banner->link)
-						{
-							$target=false;
-							if($banner->new_window)
-							{
-								$target=' target="_blank"';
-							}
-							echo '<a href="'.$banner->link.'"'.$target.'>'.$banner_image.'</a>';
-						}
-						else
-						{
-							echo $banner_image;
-						}
-						?>
+		<div id="games" style="margin:auto;margin-top:70px;">
+
+					<?php foreach($banners as $banner):?>
+
+					<a href="<?php echo $banner->link;?>" target="_blank">
+						<img  src="<?php echo base_url('uploads/'.$banner->image);?>" alt="Mini Ninjas" />
 					
-					</div>
-				<?php 
-				$active_banner = false;
-				endforeach;?>
-			</div>
-			<!-- Carousel nav -->
-			<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-			<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-		</div>
-	</div>
-</div>
-
-<script type="text/javascript">
-$('.carousel').carousel({
-  interval: 5000
-});
-</script>
+						<span>
+					<b><?php echo $banner->title ?></b><br />
 
 
-<div class="row">
-	<?php foreach($boxes as $box):?>
-	<div class="span3">
-		<?php
+					<?php echo $banner->description ?>
+				</span>
+					
+						</a>
+
+				<?php endforeach;?>
+
+
+
 		
-		$box_image	= '<img class="responsiveImage" src="'.base_url('uploads/'.$box->image).'" />';
-		if($box->link != '')
-		{
-			$target	= false;
-			if($box->new_window)
-			{
-				$target = 'target="_blank"';
-			}
-			echo '<a href="'.$box->link.'" '.$target.' >'.$box_image.'</a>';
-		}
-		else
-		{
-			echo $box_image;
-		}
-		?>
-	</div>
-	<?php endforeach;?>
-</div>
-
+			
+		</div>
+		<script>
+			$('#games').coinslider();
+		</script>
 <?php include('footer.php'); ?>
+</body>
+</html>

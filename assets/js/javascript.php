@@ -25,6 +25,7 @@ if ( ! isset($_GET['app']) || ( isset($_GET['main']) && $_GET['main'] == TRUE ))
 	echo file_get_contents('squard.js');
 	echo file_get_contents('equal_heights.js');
 	echo file_get_contents('file-browser.js');
+	echo file_get_contents('coin-slider.js');
 	
 }
 else
