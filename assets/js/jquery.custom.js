@@ -17,11 +17,11 @@ $(document).ready(function() {
 	//////////////////	
 	$('form').submit(function(){
 		$('.hide_on_submit').hide();
-		$('form:not(.submit-not-disable), input:not(.submit-not-disable), select:not(.submit-not-disable), textarea:not(.submit-not-disable)')
+		$('form:not(.submit-not-disable), input:not(.submit-not-disable), select:not(.submit-not-disable), textarea:not(.submit-not-disable), button:not(.submit-not-disable)')
 			.removeAttr('disabled','disabled')
 			.attr('readonly','readonly');
 		//$('select').combobox('disabled');
-		$('input[type="submit"], button[type="submit"]')
+		$('input[type="submit"], button[type="submit"]:not(.submit-not-disable)')
 			.attr('disabled','disabled')
 			.html('Please wait...');
 	});

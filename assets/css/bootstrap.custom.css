@@ -112,3 +112,8 @@ body > .navbar .brand:hover {
 	width: 70px;
 	height: 90px;	
 }
+
+.container{
+	min-width: 1100;
+	max-width: 1100px;
+}
